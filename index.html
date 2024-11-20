@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<head>
+    
+    <title>Tasker</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: medium;
+  color: rgb(0, 0, 0);
+}
+
+.split {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.left {
+  left: 0;
+  background-color: #ebe5e5f9;
+}
+
+.right {
+  right: 0;
+  background-color: rgb(249, 246, 246);
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.centered img {
+  width: 450px;
+  height: 450px;
+}
+</style>
+</head>
+
+<body>
+    <div class="split left">
+        <div class="centered">
+            <img src="to_do_list.jpeg" >
+        </div>
+    </div>
+    
+    <div class="split right">
+        <div class="centered">
+            <h1>Welcome to Tasker</h1>
+            <p1>Please insert your informations to access your tasks</p1><br><br>
+            <form action="/action_page.php">
+                <label for="email">Email: </label>
+                <input type="text" id="email" name="email"><br><br>
+                <label for="password">Password: </label>
+                <input type="password" id="password" name="password"> <br><br>
+                <label>
+                    <input type="checkbox" checked>
+                    Remember me 
+                    </label><br><br>
+                <input type="submit" value="Sign in">
+            </form> 
+            <p>
+                Don't have an account? 
+                <a href="sign_up.html" target="_parent">Sign Up</a>
+            </p>
+        </div>
+    </div>
+    
+</body>
